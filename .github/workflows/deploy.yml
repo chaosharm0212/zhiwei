@@ -21,10 +21,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: withastro/action@v4
         env:
-          # 绑了自定义域名后改成你的域名；用 xxx.github.io/repo 时改成 https://<user>.github.io
-          SITE: https://chaosharm0212.dev
-          # 项目页（xxx.github.io/repo）才需要下面这行，自定义域名时删掉
-          # BASE_PATH: /repo
+          # 现在走项目页：https://chaosharm0212.github.io/zhiwei/
+          # 绑了自定义域名后改成 SITE: https://你的域名 并删除 BASE_PATH
+          SITE: https://chaosharm0212.github.io
+          BASE_PATH: /zhiwei
 
   deploy:
     needs: build
